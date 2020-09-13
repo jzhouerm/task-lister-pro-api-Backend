@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
     
-    before_action :find_task, only: [:show, :destroy]
+    before_action :find_task, only: [:show]
     def index
         tasks = Task.all
         render json: tasks, except: [:created_at, :updated_at]
@@ -22,6 +22,7 @@ class TasksController < ApplicationController
     end
 
     def destroy
+        task = Task.find(params[:id])
         task.destroy
         render json: {}
     end
