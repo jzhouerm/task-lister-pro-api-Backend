@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+***Update month in createCalendar function and update seeds to reflect current month
 
-Things you may want to cover:
+Backend
+1) run rails db:migrate
+2) run rails db:seed
+3) run rails s
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Front end
+4) open index.js
